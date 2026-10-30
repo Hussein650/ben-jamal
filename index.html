@@ -1,182 +1,211 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بن جمال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="bg-gray-800 text-white py-5 border-b-4 border-b-gray-300">
-        <div class="flex items-center justify-between px-10">
-            <h1 class="text-2xl font-semibold">بن جمال</h1>
-            <i data-lucide="shopping-cart"></i>
+<body class="bg-stone-50 font-[Cairo,sans-serif] text-stone-800">
+
+    <!-- الهيدر -->
+    <header class="sticky top-0 z-50 border-b-4 border-b-amber-400 bg-linear-to-l from-emerald-950 to-emerald-800 py-4 text-white shadow-md">
+        <div class="flex items-center justify-between px-6 sm:px-10">
+            <h1 class="flex items-center gap-2 text-2xl font-extrabold">
+                <i data-lucide="shirt" class="size-7 text-amber-400"></i>
+                بن جمال
+            </h1>
+            <button type="button" aria-label="السلة" class="relative rounded-full bg-white/10 p-2.5 transition hover:bg-white/20">
+                <i data-lucide="shopping-cart" class="size-6"></i>
+                <span class="absolute -top-1 -end-1 grid size-5 place-items-center rounded-full bg-amber-400 text-xs font-extrabold text-emerald-950">0</span>
+            </button>
         </div>
     </header>
 
-    <nav class="py-5 shadow-sm">
-        <ul class="flex gap-5 px-10">
-            <li class="text-gray-900 border-b-2 border-b-gray-400 pb-1">
-                <a href="#">الرئيسية</a>
-            </li>
-            <li class="pb-1">
-                <a href="#">عن المتجر</a>
-            </li>
-            <li class="pb-1">
-                <a href="#">تسجيل دخول</a>
-            </li>
+    <!-- القائمة -->
+    <nav class="bg-white py-4 shadow-sm">
+        <ul class="flex gap-6 px-6 font-bold text-stone-500 sm:px-10">
+            <li class="border-b-2 border-b-amber-500 pb-1 text-emerald-800"><a href="#">الرئيسية</a></li>
+            <li class="pb-1 transition hover:text-emerald-800"><a href="#">عن المتجر</a></li>
+            <li class="pb-1 transition hover:text-emerald-800"><a href="#">تسجيل دخول</a></li>
         </ul>
     </nav>
 
-    <main class="my-10">
-        <section class="px-10 grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
-            <!-- بطاقة 1: غيّر src و href حسب صورك وروابطك -->
-            <a href="#" class="group relative block h-64 overflow-hidden bg-gray-800 text-white focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand shadow-[0_0_3px_0_rgba(150,150,150,0.8)]">
-                <img src="./src/images/sada.jpeg" alt="مجموعة الرجال" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 [clip-path:polygon(0_0,30%_0,100%_100%,0_100%)]">
-                <div class="absolute inset-0 bg-brand [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
-                <div class="absolute right-7 top-7">
-                <h3 class="text-2xl font-extrabold leading-tight">مجموعة<br>الكاروهات</h3>
-                <span class="mt-4 inline-flex items-center gap-2 text-sm font-bold">
+    <main>
+        <!-- البانر -->
+        <section class="relative overflow-hidden bg-linear-to-bl from-emerald-900 via-emerald-800 to-emerald-700 px-6 py-16 text-white sm:px-10 sm:py-24">
+            <div class="pointer-events-none absolute -start-20 -top-20 size-72 rounded-full bg-amber-400/20 blur-3xl"></div>
+            <div class="pointer-events-none absolute -bottom-24 end-10 size-80 rounded-full bg-emerald-300/10 blur-3xl"></div>
+            <div class="relative mx-auto max-w-6xl">
+                <span class="rounded-full bg-amber-400 px-4 py-1 text-sm font-extrabold text-emerald-950">وصل حديثاً</span>
+                <h2 class="mt-5 text-4xl font-extrabold leading-snug sm:text-5xl">أناقة تليق بك<br><span class="text-amber-300">في كل مناسبة</span></h2>
+                <p class="mt-4 max-w-md text-emerald-100">قمصان رجالية بأجود الخامات وأفضل الأسعار.</p>
+                <a href="#products" class="mt-8 inline-flex items-center gap-2 rounded-full bg-amber-400 px-7 py-3 font-extrabold text-emerald-950 shadow-lg transition hover:bg-amber-300 hover:shadow-xl">
                     تسوّق الآن
-                    <span class="grid h-6 w-6 place-items-center rounded-full bg-white text-brand transition-transform duration-300 group-hover:-translate-x-1">
-                    <i data-lucide="arrow-left" class="h-3.5 w-3.5 text-gray-900"></i>
-                    </span>
-                </span>
-                </div>
-            </a>
-
-            <a href="#" class="group relative block h-64 overflow-hidden bg-gray-800 text-white focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand shadow-[0_0_3px_0_rgba(150,150,150,0.8)]">
-                <img src="./src/images/mogalam.webp" alt="مجموعة الرجال" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 [clip-path:polygon(0_0,30%_0,100%_100%,0_100%)]">
-                <div class="absolute inset-0 bg-brand [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
-                <div class="absolute right-7 top-7">
-                <h3 class="text-2xl font-extrabold leading-tight">مجموعة<br>الكاروهات</h3>
-                <span class="mt-4 inline-flex items-center gap-2 text-sm font-bold">
-                    تسوّق الآن
-                    <span class="grid h-6 w-6 place-items-center rounded-full bg-white text-brand transition-transform duration-300 group-hover:-translate-x-1">
-                    <i data-lucide="arrow-left" class="h-3.5 w-3.5 text-gray-900"></i>
-                    </span>
-                </span>
-                </div>
-            </a>
-
-            <a href="#" class="group relative block h-64 overflow-hidden bg-gray-800 text-white focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand shadow-[0_0_3px_0_rgba(150,150,150,0.8)]">
-                <img src="./src/images/karuhat.jpeg" alt="مجموعة الرجال" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 [clip-path:polygon(0_0,30%_0,100%_100%,0_100%)]">
-                <div class="absolute inset-0 bg-brand [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
-                <div class="absolute right-7 top-7">
-                <h3 class="text-2xl font-extrabold leading-tight">مجموعة<br>الكاروهات</h3>
-                <span class="mt-4 inline-flex items-center gap-2 text-sm font-bold">
-                    تسوّق الآن
-                    <span class="grid h-6 w-6 place-items-center rounded-full bg-white text-brand transition-transform duration-300 group-hover:-translate-x-1">
-                    <i data-lucide="arrow-left" class="h-3.5 w-3.5 text-gray-900"></i>
-                    </span>
-                </span>
-                </div>
-            </a>
+                    <i data-lucide="arrow-left" class="size-5"></i>
+                </a>
+            </div>
         </section>
 
-        <section class="px-10 py-10">
-            <h3 class="text-xl font-semibold text-gray-800">منتجات جديدة</h3>
-            <div class="mx-auto my-10 grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                <!-- Card -->
-                <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-gray-200 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                    <!-- الصورة -->
-                    <div class="relative aspect-4/5 overflow-hidden bg-gray-100">
-                        <img src="./src/images/sada.jpeg" alt="قميص بولو سادة" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
-                        <span class="absolute inset-s-3 top-3 rounded-full bg-gray-900/85 px-3 py-1 text-sm font-bold text-white">Polo</span>
-                    </div>
-
-                    <!-- التفاصيل -->
-                    <div class="flex flex-1 flex-col gap-3 p-5">
-                    <h4 class="text-lg font-extrabold text-gray-900">قميص سادة</h4>
-
-                    <div class="flex flex-wrap gap-2" aria-label="الأحجام المتاحة">
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">L</span>
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">XL</span>
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">2XL</span>
-                    </div>
-
-                    <div class="mt-auto flex items-baseline gap-2 pt-1">
-                        <span class="text-xl font-extrabold text-gray-900">50.000 ج</span>
-                        <!-- احذف السطرين التاليين لو لا يوجد خصم -->
-                        <span class="text-sm font-bold text-gray-400 line-through">65.000 ج</span>
-                    </div>
-
-                    <button type="button"
-                            class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-gray-800 px-5 py-3 font-bold text-white transition hover:bg-gray-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800">
-                        <i data-lucide="shopping-cart" class="size-5"></i>
-                        <span>أضف للسلة</span>
-                    </button>
-                    </div>
+        <!-- المميزات -->
+        <section class="border-b border-stone-200 bg-white">
+            <div class="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 py-8 sm:px-10 lg:grid-cols-4">
+                <div class="flex items-center gap-3">
+                    <span class="grid size-12 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-700"><i data-lucide="truck" class="size-6"></i></span>
+                    <span class="text-sm font-bold">توصيل سريع</span>
                 </div>
-                <!-- Card -->
-                <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-gray-200 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                    <!-- الصورة -->
-                    <div class="relative aspect-4/5 overflow-hidden bg-gray-100">
-                        <img src="./src/images/sada.jpeg" alt="قميص بولو سادة" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
-                        <span class="absolute inset-s-3 top-3 rounded-full bg-gray-900/85 px-3 py-1 text-sm font-bold text-white">Polo</span>
-                    </div>
-
-                    <!-- التفاصيل -->
-                    <div class="flex flex-1 flex-col gap-3 p-5">
-                    <h4 class="text-lg font-extrabold text-gray-900">قميص سادة</h4>
-
-                    <div class="flex flex-wrap gap-2" aria-label="الأحجام المتاحة">
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">L</span>
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">XL</span>
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">2XL</span>
-                    </div>
-
-                    <div class="mt-auto flex items-baseline gap-2 pt-1">
-                        <span class="text-xl font-extrabold text-gray-900">50.000 ج</span>
-                        <!-- احذف السطرين التاليين لو لا يوجد خصم -->
-                        <span class="text-sm font-bold text-gray-400 line-through">65.000 ج</span>
-                    </div>
-
-                    <button type="button"
-                            class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-gray-800 px-5 py-3 font-bold text-white transition hover:bg-gray-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800">
-                        <i data-lucide="shopping-cart" class="size-5"></i>
-                        <span>أضف للسلة</span>
-                    </button>
-                    </div>
+                <div class="flex items-center gap-3">
+                    <span class="grid size-12 shrink-0 place-items-center rounded-full bg-amber-100 text-amber-700"><i data-lucide="banknote" class="size-6"></i></span>
+                    <span class="text-sm font-bold">الدفع عند الاستلام</span>
                 </div>
-                <!-- Card -->
-                <div class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-gray-200 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                    <!-- الصورة -->
-                    <div class="relative aspect-4/5 overflow-hidden bg-gray-100">
-                        <img src="./src/images/sada.jpeg" alt="قميص بولو سادة" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
-                        <span class="absolute inset-s-3 top-3 rounded-full bg-gray-900/85 px-3 py-1 text-sm font-bold text-white">Polo</span>
-                    </div>
+                <div class="flex items-center gap-3">
+                    <span class="grid size-12 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-700"><i data-lucide="shield-check" class="size-6"></i></span>
+                    <span class="text-sm font-bold">جودة مضمونة</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="grid size-12 shrink-0 place-items-center rounded-full bg-amber-100 text-amber-700"><i data-lucide="refresh-ccw" class="size-6"></i></span>
+                    <span class="text-sm font-bold">استبدال سهل</span>
+                </div>
+            </div>
+        </section>
 
-                    <!-- التفاصيل -->
-                    <div class="flex flex-1 flex-col gap-3 p-5">
-                    <h4 class="text-lg font-extrabold text-gray-900">قميص سادة</h4>
+        <!-- المجموعات -->
+        <section class="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <h3 class="mb-8 text-2xl font-extrabold text-emerald-900">تسوّق حسب المجموعة
+                <span class="mt-2 block h-1 w-14 rounded-full bg-amber-400"></span>
+            </h3>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-                    <div class="flex flex-wrap gap-2" aria-label="الأحجام المتاحة">
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">L</span>
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">XL</span>
-                        <span class="rounded-md border border-gray-300 px-2.5 py-0.5 text-xs font-bold text-gray-600">2XL</span>
+                <a href="#" class="group relative block h-64 overflow-hidden rounded-xl bg-emerald-950 text-white shadow-md transition hover:shadow-xl focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-amber-400">
+                    <img src="./src/images/sada.jpeg" alt="مجموعة السادة" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 [clip-path:polygon(0_0,30%_0,100%_100%,0_100%)]">
+                    <div class="absolute inset-0 bg-emerald-700/95 [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                    <div class="absolute end-7 top-7">
+                        <h4 class="text-2xl font-extrabold leading-tight">مجموعة<br>السادة</h4>
+                        <span class="mt-4 inline-flex items-center gap-2 text-sm font-bold">تسوّق الآن
+                            <span class="grid size-6 place-items-center rounded-full bg-amber-400 text-emerald-950 transition-transform duration-300 group-hover:-translate-x-1"><i data-lucide="arrow-left" class="size-3.5"></i></span>
+                        </span>
                     </div>
+                </a>
 
-                    <div class="mt-auto flex items-baseline gap-2 pt-1">
-                        <span class="text-xl font-extrabold text-gray-900">50.000 ج</span>
-                        <!-- احذف السطرين التاليين لو لا يوجد خصم -->
-                        <span class="text-sm font-bold text-gray-400 line-through">65.000 ج</span>
+                <a href="#" class="group relative block h-64 overflow-hidden rounded-xl bg-emerald-950 text-white shadow-md transition hover:shadow-xl focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-amber-400">
+                    <img src="./src/images/mogalam.webp" alt="مجموعة المقلّم" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 [clip-path:polygon(0_0,30%_0,100%_100%,0_100%)]">
+                    <div class="absolute inset-0 bg-amber-600/95 [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                    <div class="absolute end-7 top-7">
+                        <h4 class="text-2xl font-extrabold leading-tight">مجموعة<br>المقلّم</h4>
+                        <span class="mt-4 inline-flex items-center gap-2 text-sm font-bold">تسوّق الآن
+                            <span class="grid size-6 place-items-center rounded-full bg-white text-amber-700 transition-transform duration-300 group-hover:-translate-x-1"><i data-lucide="arrow-left" class="size-3.5"></i></span>
+                        </span>
                     </div>
+                </a>
 
-                    <button type="button"
-                            class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-gray-800 px-5 py-3 font-bold text-white transition hover:bg-gray-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800">
-                        <i data-lucide="shopping-cart" class="size-5"></i>
-                        <span>أضف للسلة</span>
-                    </button>
+                <a href="#" class="group relative block h-64 overflow-hidden rounded-xl bg-emerald-950 text-white shadow-md transition hover:shadow-xl focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-amber-400">
+                    <img src="./src/images/karuhat.jpeg" alt="مجموعة الكاروهات" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 [clip-path:polygon(0_0,30%_0,100%_100%,0_100%)]">
+                    <div class="absolute inset-0 bg-rose-700/95 [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                    <div class="absolute end-7 top-7">
+                        <h4 class="text-2xl font-extrabold leading-tight">مجموعة<br>الكاروهات</h4>
+                        <span class="mt-4 inline-flex items-center gap-2 text-sm font-bold">تسوّق الآن
+                            <span class="grid size-6 place-items-center rounded-full bg-white text-rose-700 transition-transform duration-300 group-hover:-translate-x-1"><i data-lucide="arrow-left" class="size-3.5"></i></span>
+                        </span>
                     </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- المنتجات -->
+        <section id="products" class="bg-emerald-50 px-6 py-14 sm:px-10">
+            <div class="mx-auto max-w-6xl">
+                <h3 class="mb-8 text-2xl font-extrabold text-emerald-900">منتجات جديدة
+                    <span class="mt-2 block h-1 w-14 rounded-full bg-amber-400"></span>
+                </h3>
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- بطاقة منتج -->
+                    <article class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-emerald-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-emerald-300">
+                        <div class="relative aspect-4/5 overflow-hidden bg-stone-100">
+                            <img src="./src/images/sada.jpeg" alt="قميص بولو سادة" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                            <span class="absolute inset-s-3 top-3 rounded-full bg-emerald-800 px-3 py-1 text-sm font-bold text-white">Polo</span>
+                            <span class="absolute inset-e-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-extrabold text-emerald-950">جديد</span>
+                        </div>
+                        <div class="flex flex-1 flex-col gap-3 p-5">
+                            <h4 class="text-lg font-extrabold text-emerald-950">قميص سادة</h4>
+                            <div class="flex flex-wrap gap-2" aria-label="الأحجام المتاحة">
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">L</span>
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">XL</span>
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">2XL</span>
+                            </div>
+                            <div class="mt-auto flex items-baseline gap-2 pt-1">
+                                <span class="text-xl font-extrabold text-emerald-800">50.000 ج</span>
+                                <span class="text-sm font-bold text-stone-400 line-through">65.000 ج</span>
+                                <span class="rounded bg-rose-100 px-1.5 py-0.5 text-xs font-bold text-rose-700">وفّر 23%</span>
+                            </div>
+                            <button type="button" class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-800 px-5 py-3 font-bold text-white transition hover:bg-emerald-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500">
+                                <i data-lucide="shopping-cart" class="size-5"></i><span>أضف للسلة</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-emerald-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-emerald-300">
+                        <div class="relative aspect-4/5 overflow-hidden bg-stone-100">
+                            <img src="./src/images/mogalam.webp" alt="قميص مقلّم" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                            <span class="absolute inset-s-3 top-3 rounded-full bg-emerald-800 px-3 py-1 text-sm font-bold text-white">Polo</span>
+                            <span class="absolute inset-e-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-extrabold text-emerald-950">جديد</span>
+                        </div>
+                        <div class="flex flex-1 flex-col gap-3 p-5">
+                            <h4 class="text-lg font-extrabold text-emerald-950">قميص مقلّم</h4>
+                            <div class="flex flex-wrap gap-2" aria-label="الأحجام المتاحة">
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">L</span>
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">XL</span>
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">2XL</span>
+                            </div>
+                            <div class="mt-auto flex items-baseline gap-2 pt-1">
+                                <span class="text-xl font-extrabold text-emerald-800">50.000 ج</span>
+                                <span class="text-sm font-bold text-stone-400 line-through">65.000 ج</span>
+                                <span class="rounded bg-rose-100 px-1.5 py-0.5 text-xs font-bold text-rose-700">وفّر 23%</span>
+                            </div>
+                            <button type="button" class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-800 px-5 py-3 font-bold text-white transition hover:bg-emerald-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500">
+                                <i data-lucide="shopping-cart" class="size-5"></i><span>أضف للسلة</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="group flex flex-col overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-emerald-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-emerald-300">
+                        <div class="relative aspect-4/5 overflow-hidden bg-stone-100">
+                            <img src="./src/images/karuhat.jpeg" alt="قميص كاروهات" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                            <span class="absolute inset-s-3 top-3 rounded-full bg-emerald-800 px-3 py-1 text-sm font-bold text-white">Polo</span>
+                            <span class="absolute inset-e-3 top-3 rounded-full bg-amber-400 px-3 py-1 text-xs font-extrabold text-emerald-950">جديد</span>
+                        </div>
+                        <div class="flex flex-1 flex-col gap-3 p-5">
+                            <h4 class="text-lg font-extrabold text-emerald-950">قميص كاروهات</h4>
+                            <div class="flex flex-wrap gap-2" aria-label="الأحجام المتاحة">
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">L</span>
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">XL</span>
+                                <span class="rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-bold text-emerald-800">2XL</span>
+                            </div>
+                            <div class="mt-auto flex items-baseline gap-2 pt-1">
+                                <span class="text-xl font-extrabold text-emerald-800">50.000 ج</span>
+                                <span class="text-sm font-bold text-stone-400 line-through">65.000 ج</span>
+                                <span class="rounded bg-rose-100 px-1.5 py-0.5 text-xs font-bold text-rose-700">وفّر 23%</span>
+                            </div>
+                            <button type="button" class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-800 px-5 py-3 font-bold text-white transition hover:bg-emerald-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500">
+                                <i data-lucide="shopping-cart" class="size-5"></i><span>أضف للسلة</span>
+                            </button>
+                        </div>
+                    </article>
+
                 </div>
             </div>
         </section>
     </main>
+
     <script type="module" src="src/main.js"></script>
-    <footer class="bg-gray-900 py-8 text-white text-center font-bold">
-        <i data-lucide="circle-letter-c" class="inline w-4">&copy;</i>
-         كل الحقوق محفوظة
-         <span>بن جمال</span>
+
+    <!-- الفوتر -->
+    <footer class="border-t-4 border-t-amber-400 bg-emerald-950 py-8 text-center font-bold text-emerald-100">
+        <p class="flex items-center justify-center gap-1.5">
+            <i data-lucide="copyright" class="size-4 text-amber-400"></i>
+            كل الحقوق محفوظة
+            <span class="text-amber-300">بن جمال</span>
+        </p>
     </footer>
 </body>
 </html>
