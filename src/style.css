@@ -5,3 +5,28 @@ body {
     font-family: "Cairo", sans-serif;
     direction: rtl;
 }
+
+@theme {
+  /* الكحلي: اللون الرئيسي */
+  --color-navy-50:  #f1f4f9;
+  --color-navy-100: #dde4f0;
+  --color-navy-200: #b9c7de;
+  --color-navy-300: #8ea3c6;
+  --color-navy-400: #5f7bab;
+  --color-navy-500: #3f5d92;
+  --color-navy-600: #2e4777;
+  --color-navy-700: #243a62;
+  --color-navy-800: #1a2c4d;
+  --color-navy-900: #121f3a;
+  --color-navy-950: #0b1426;
+
+  /* الذهبي الرملي: اللون الثانوي */
+  --color-gold-50:  #fbf7ec;
+  --color-gold-100: #f5ecd2;
+  --color-gold-200: #ecd9a4;
+  --color-gold-300: #e0c174;
+  --color-gold-400: #d3a94c;
+  --color-gold-500: #c3913a;
+  --color-gold-600: #a57530;
+  --color-gold-700: #835a29;
+}
