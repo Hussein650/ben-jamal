@@ -5,4 +5,5 @@ npm install
 npm run dev
 
 npm run build      # production build → dist/
+
 npm run preview    # serve the production build locally
