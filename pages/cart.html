@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات | بن جمال</title>
+</head>
+<body class="bg-slate-50 font-[Cairo,sans-serif] text-slate-800">
+
+    <!-- الهيدر -->
+    <header class="sticky top-0 z-50 border-b-4 border-b-gold-400 bg-linear-to-l from-navy-950 to-navy-800 py-4 text-white shadow-md">
+        <div class="flex items-center justify-between px-6 sm:px-10">
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-extrabold">
+                <i data-lucide="shirt" class="size-7 text-gold-400"></i>
+                بن جمال
+            </a>
+            <a href="cart.html" aria-label="السلة" class="relative rounded-full bg-white/10 p-2.5 transition hover:bg-white/20">
+                <i data-lucide="shopping-cart" class="size-6"></i>
+                <span id="cartCount" class="absolute -top-1 -inset-e-1 grid size-5 place-items-center rounded-full bg-gold-400 text-xs font-extrabold text-navy-950">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- القائمة -->
+    <nav class="bg-white py-4 shadow-sm">
+        <ul class="flex gap-6 px-6 font-bold text-slate-500 sm:px-10">
+            <li class="pb-1 transition hover:text-navy-800"><a href="../index.html">الرئيسية</a></li>
+            <li class="pb-1 transition hover:text-navy-800"><a href="./about.html">عن المتجر</a></li>
+            <li class="pb-1 transition hover:text-navy-800"><a href="../auth/login.html">تسجيل دخول</a></li>
+        </ul>
+    </nav>
+
+    <main class="mx-auto max-w-6xl px-6 py-12 sm:px-10">
+        <h2 class="mb-8 text-3xl font-extrabold text-navy-900">سلة المشتريات
+            <span class="mt-2 block h-1 w-14 rounded-full bg-gold-400"></span>
+        </h2>
+
+        <div class="grid gap-8 lg:grid-cols-3">
+
+            <!-- العمود الرئيسي -->
+            <div class="space-y-8 lg:col-span-2">
+
+                <!-- ===== المنتجات ===== -->
+                <section class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-navy-100 sm:p-6">
+                    <h3 class="mb-5 flex items-center gap-2 text-lg font-extrabold text-navy-900">
+                        <i data-lucide="shopping-bag" class="size-5 text-gold-600"></i> المنتجات
+                    </h3>
+
+                    <div id="cartItems" class="divide-y divide-navy-100">
+
+                        <!-- منتج (بيانات تجريبية: يستبدلها الباك إند) -->
+                        <article class="cart-item flex flex-wrap items-center gap-4 py-5 first:pt-0" data-price="50000">
+                            <img src="../src/images/sada.jpeg" alt="قميص سادة" class="size-24 shrink-0 rounded-lg object-cover ring-1 ring-navy-100">
+                            <div class="min-w-40 flex-1">
+                                <h4 class="font-extrabold text-navy-950">قميص سادة</h4>
+                                <p class="mt-1 text-sm text-slate-500">اللون: كحلي · المقاس: L</p>
+                                <p class="mt-1 text-sm font-bold text-navy-700">50.000 ج للقطعة</p>
+                            </div>
+                            <div class="inline-flex items-center overflow-hidden rounded-lg border border-navy-200">
+                                <button type="button" data-qty="-1" aria-label="إنقاص" class="grid size-9 place-items-center bg-navy-50 text-navy-800 transition hover:bg-navy-100"><i data-lucide="minus" class="size-4"></i></button>
+                                <span class="qty w-10 text-center font-extrabold">1</span>
+                                <button type="button" data-qty="1" aria-label="زيادة" class="grid size-9 place-items-center bg-navy-50 text-navy-800 transition hover:bg-navy-100"><i data-lucide="plus" class="size-4"></i></button>
+                            </div>
+                            <p class="line-total w-28 text-end text-lg font-extrabold text-navy-800"></p>
+                            <button type="button" data-remove aria-label="حذف المنتج" class="grid size-9 place-items-center rounded-full text-slate-400 transition hover:bg-rose-50 hover:text-rose-600"><i data-lucide="trash-2" class="size-5"></i></button>
+                        </article>
+
+                        <article class="cart-item flex flex-wrap items-center gap-4 py-5" data-price="50000">
+                            <img src="../src/images/karuhat.jpeg" alt="قميص كاروهات" class="size-24 shrink-0 rounded-lg object-cover ring-1 ring-navy-100">
+                            <div class="min-w-40 flex-1">
+                                <h4 class="font-extrabold text-navy-950">قميص كاروهات</h4>
+                                <p class="mt-1 text-sm text-slate-500">اللون: رمادي · المقاس: XL</p>
+                                <p class="mt-1 text-sm font-bold text-navy-700">50.000 ج للقطعة</p>
+                            </div>
+                            <div class="inline-flex items-center overflow-hidden rounded-lg border border-navy-200">
+                                <button type="button" data-qty="-1" aria-label="إنقاص" class="grid size-9 place-items-center bg-navy-50 text-navy-800 transition hover:bg-navy-100"><i data-lucide="minus" class="size-4"></i></button>
+                                <span class="qty w-10 text-center font-extrabold">2</span>
+                                <button type="button" data-qty="1" aria-label="زيادة" class="grid size-9 place-items-center bg-navy-50 text-navy-800 transition hover:bg-navy-100"><i data-lucide="plus" class="size-4"></i></button>
+                            </div>
+                            <p class="line-total w-28 text-end text-lg font-extrabold text-navy-800"></p>
+                            <button type="button" data-remove aria-label="حذف المنتج" class="grid size-9 place-items-center rounded-full text-slate-400 transition hover:bg-rose-50 hover:text-rose-600"><i data-lucide="trash-2" class="size-5"></i></button>
+                        </article>
+                    </div>
+
+                    <!-- السلة فارغة -->
+                    <div id="emptyCart" class="hidden py-10 text-center">
+                        <span class="mx-auto grid size-16 place-items-center rounded-full bg-navy-50 text-navy-400"><i data-lucide="shopping-cart" class="size-8"></i></span>
+                        <p class="mt-4 font-extrabold text-navy-900">سلتك فارغة</p>
+                        <a href="index.html#products" class="mt-4 inline-flex items-center gap-2 rounded-full bg-navy-800 px-6 py-2.5 font-bold text-white transition hover:bg-navy-900">تصفّح المنتجات <i data-lucide="arrow-left" class="size-4"></i></a>
+                    </div>
+                </section>
+
+                <!-- ===== بيانات الطلب ===== -->
+                <form id="orderForm" action="#" method="post" enctype="multipart/form-data" class="space-y-8">
+
+                    <!-- بيانات العميل -->
+                    <section class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-navy-100 sm:p-6">
+                        <h3 class="mb-5 flex items-center gap-2 text-lg font-extrabold text-navy-900">
+                            <i data-lucide="user" class="size-5 text-gold-600"></i> بيانات التوصيل
+                        </h3>
+                        <div class="grid gap-5 sm:grid-cols-2">
+                            <div>
+                                <label for="name" class="mb-1.5 block text-sm font-bold text-navy-900">الاسم</label>
+                                <input id="name" name="name" type="text" required autocomplete="name" placeholder="الاسم الكامل"
+                                       class="w-full rounded-lg border border-navy-200 bg-navy-50/50 px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100">
+                            </div>
+                            <div>
+                                <label for="phone" class="mb-1.5 block text-sm font-bold text-navy-900">رقم الهاتف</label>
+                                <input id="phone" name="phone" type="tel" required autocomplete="tel" dir="ltr" placeholder="09XXXXXXXX"
+                                       class="w-full rounded-lg border border-navy-200 bg-navy-50/50 px-4 py-3 text-start text-sm outline-none transition placeholder:text-slate-400 focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100">
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="state" class="mb-1.5 block text-sm font-bold text-navy-900">مكان التوصيل (الولاية)</label>
+                                <select id="state" name="state" required
+                                        class="w-full rounded-lg border border-navy-200 bg-navy-50/50 px-4 py-3 text-sm outline-none transition focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100">
+                                    <option value="" disabled selected>اختر الولاية</option>
+                                    <option value="river-nile">نهر النيل</option>
+                                    <option value="northern">الشمالية</option>
+                                    <option value="darfur">دارفور</option>
+                                    <option value="kordofan">كردفان</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- طريقة الدفع -->
+                    <section class="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-navy-100 sm:p-6">
+                        <h3 class="mb-5 flex items-center gap-2 text-lg font-extrabold text-navy-900">
+                            <i data-lucide="credit-card" class="size-5 text-gold-600"></i> طريقة الدفع
+                        </h3>
+
+                        <!-- ضع شعارات التطبيقات في src/images بنفس هذه الأسماء -->
+                        <div class="grid gap-4 sm:grid-cols-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="payment" value="bankak" required class="peer sr-only">
+                                <span class="flex flex-col items-center gap-3 rounded-xl border-2 border-navy-100 p-4 text-center transition hover:border-navy-300 peer-checked:border-gold-500 peer-checked:bg-gold-50 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-500">
+                                    <img src="./src/images/bankak.png" alt="" class="size-14 rounded-lg object-contain" onerror="this.style.display='none'">
+                                    <span class="font-extrabold text-navy-900">بنكك</span>
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="payment" value="ocash" class="peer sr-only">
+                                <span class="flex flex-col items-center gap-3 rounded-xl border-2 border-navy-100 p-4 text-center transition hover:border-navy-300 peer-checked:border-gold-500 peer-checked:bg-gold-50 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-500">
+                                    <img src="./src/images/ocash.png" alt="" class="size-14 rounded-lg object-contain" onerror="this.style.display='none'">
+                                    <span class="font-extrabold text-navy-900">أوكاش</span>
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="payment" value="fawry" class="peer sr-only">
+                                <span class="flex flex-col items-center gap-3 rounded-xl border-2 border-navy-100 p-4 text-center transition hover:border-navy-300 peer-checked:border-gold-500 peer-checked:bg-gold-50 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-500">
+                                    <img src="./src/images/fawry.png" alt="" class="size-14 rounded-lg object-contain" onerror="this.style.display='none'">
+                                    <span class="font-extrabold text-navy-900">فوري</span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- رقم الحساب: يظهر بعد اختيار الطريقة (استبدل الأرقام بأرقام حساباتكم الحقيقية) -->
+                        <div class="mt-6">
+                            <div id="accountPanel" data-method="bankak" class="account-panel rounded-xl bg-navy-50 p-5 ring-1 ring-navy-100">
+                                <p class="text-sm font-bold text-slate-500">حوّل المبلغ إلى حساب بنكك</p>
+                                <div class="mt-2 flex flex-wrap items-center justify-between gap-3">
+                                    <p dir="ltr" class="account-number text-2xl font-extrabold tracking-wider text-navy-900">0000000</p>
+                                    <button type="button" data-copy class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-bold text-navy-800 ring-1 ring-navy-200 transition hover:bg-navy-100"><i data-lucide="copy" class="size-4"></i><span>نسخ الرقم</span></button>
+                                </div>
+                                <p class="mt-2 text-sm text-slate-500">اسم الحساب: ____________</p>
+                            </div>
+                            <div data-method="ocash" class="account-panel hidden rounded-xl bg-navy-50 p-5 ring-1 ring-navy-100">
+                                <p class="text-sm font-bold text-slate-500">حوّل المبلغ إلى حساب أوكاش</p>
+                                <div class="mt-2 flex flex-wrap items-center justify-between gap-3">
+                                    <p dir="ltr" class="account-number text-2xl font-extrabold tracking-wider text-navy-900">0000000</p>
+                                    <button type="button" data-copy class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-bold text-navy-800 ring-1 ring-navy-200 transition hover:bg-navy-100"><i data-lucide="copy" class="size-4"></i><span>نسخ الرقم</span></button>
+                                </div>
+                                <p class="mt-2 text-sm text-slate-500">اسم الحساب: ____________</p>
+                            </div>
+                            <div data-method="fawry" class="account-panel hidden rounded-xl bg-navy-50 p-5 ring-1 ring-navy-100">
+                                <p class="text-sm font-bold text-slate-500">حوّل المبلغ إلى حساب فوري</p>
+                                <div class="mt-2 flex flex-wrap items-center justify-between gap-3">
+                                    <p dir="ltr" class="account-number text-2xl font-extrabold tracking-wider text-navy-900">0000000</p>
+                                    <button type="button" data-copy class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-bold text-navy-800 ring-1 ring-navy-200 transition hover:bg-navy-100"><i data-lucide="copy" class="size-4"></i><span>نسخ الرقم</span></button>
+                                </div>
+                                <p class="mt-2 text-sm text-slate-500">اسم الحساب: ____________</p>
+                            </div>
+                        </div>
+
+                        <!-- إشعار الدفع -->
+                        <div class="mt-6">
+                            <label for="receipt" class="mb-1.5 block text-sm font-bold text-navy-900">صورة إشعار الدفع</label>
+                            <label for="receipt" class="flex cursor-pointer flex-col items-center gap-2 rounded-xl border-2 border-dashed border-navy-200 bg-navy-50/50 px-4 py-8 text-center transition hover:border-gold-500 hover:bg-gold-50">
+                                <img id="receiptPreview" alt="معاينة الإشعار" class="hidden max-h-48 rounded-lg object-contain">
+                                <span id="receiptIcon" class="grid size-12 place-items-center rounded-full bg-white text-navy-600 ring-1 ring-navy-100"><i data-lucide="upload" class="size-6"></i></span>
+                                <span id="receiptText" class="text-sm font-bold text-navy-800">اضغط لاختيار صورة الإشعار</span>
+                                <span class="text-xs text-slate-400">JPG أو PNG</span>
+                            </label>
+                            <input id="receipt" name="receipt" type="file" accept="image/*" required class="sr-only">
+                        </div>
+                    </section>
+                </form>
+            </div>
+
+            <!-- ملخص الطلب -->
+            <aside class="lg:sticky lg:top-24 lg:self-start">
+                <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-navy-100">
+                    <h3 class="mb-5 flex items-center gap-2 text-lg font-extrabold text-navy-900">
+                        <i data-lucide="receipt" class="size-5 text-gold-600"></i> ملخص الطلب
+                    </h3>
+                    <dl class="space-y-3 text-sm">
+                        <div class="flex justify-between"><dt class="text-slate-500">عدد القطع</dt><dd id="sumCount" class="font-bold">0</dd></div>
+                        <div class="flex justify-between"><dt class="text-slate-500">المجموع الفرعي</dt><dd id="sumSub" class="font-bold">0 ج</dd></div>
+                        <div class="flex justify-between"><dt class="text-slate-500">رسوم التوصيل</dt><dd class="font-bold text-slate-500">تُحدد حسب الولاية</dd></div>
+                    </dl>
+                    <div class="mt-5 flex items-center justify-between border-t border-navy-100 pt-5">
+                        <span class="font-extrabold text-navy-900">الإجمالي</span>
+                        <span id="sumTotal" class="text-2xl font-extrabold text-navy-800">0 ج</span>
+                    </div>
+                    <button type="submit" form="orderForm"
+                            class="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
+                        <i data-lucide="check-circle" class="size-5"></i>
+                        <span>تأكيد الطلب</span>
+                    </button>
+                    <p class="mt-4 flex items-start gap-2 text-xs leading-6 text-slate-500"><i data-lucide="shield-check" class="mt-1 size-4 shrink-0 text-gold-600"></i>سيتم مراجعة إشعار الدفع وتأكيد طلبك بعد التحقق منه.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script type="module" src="../src/main.js"></script>
+    <script>
+        const $ = (s, r = document) => r.querySelector(s);
+        const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+        const money = (n) => `${n.toLocaleString('de-DE')} ج`;
+
+        // ===== الكميات والمجاميع =====
+        function recalc() {
+            let count = 0, sub = 0;
+            const items = $$('.cart-item');
+            items.forEach((item) => {
+                const qty = Number($('.qty', item).textContent);
+                const line = qty * Number(item.dataset.price);
+                $('.line-total', item).textContent = money(line);
+                count += qty; sub += line;
+            });
+            $('#sumCount').textContent = count;
+            $('#sumSub').textContent = money(sub);
+            $('#sumTotal').textContent = money(sub);
+            $('#cartCount').textContent = count;
+            $('#emptyCart').classList.toggle('hidden', items.length > 0);
+        }
+
+        $('#cartItems').addEventListener('click', (e) => {
+            const item = e.target.closest('.cart-item');
+            if (!item) return;
+            const qtyBtn = e.target.closest('[data-qty]');
+            if (qtyBtn) {
+                const q = $('.qty', item);
+                q.textContent = Math.min(10, Math.max(1, Number(q.textContent) + Number(qtyBtn.dataset.qty)));
+            }
+            if (e.target.closest('[data-remove]')) item.remove();
+            recalc();
+        });
+
+        // ===== إظهار رقم الحساب حسب طريقة الدفع =====
+        $$('input[name="payment"]').forEach((radio) => {
+            radio.addEventListener('change', () => {
+                $$('.account-panel').forEach((p) => p.classList.toggle('hidden', p.dataset.method !== radio.value));
+            });
+        });
+
+        // ===== نسخ رقم الحساب =====
+        document.addEventListener('click', async (e) => {
+            const btn = e.target.closest('[data-copy]');
+            if (!btn) return;
+            const number = $('.account-number', btn.closest('.account-panel')).textContent.trim();
+            try { await navigator.clipboard.writeText(number); } catch {}
+            const label = $('span', btn), old = label.textContent;
+            label.textContent = 'تم النسخ ✓';
+            setTimeout(() => (label.textContent = old), 1500);
+        });
+
+        // ===== معاينة صورة الإشعار =====
+        $('#receipt').addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            const img = $('#receiptPreview');
+            if (!file) return;
+            img.src = URL.createObjectURL(file);
+            img.classList.remove('hidden');
+            $('#receiptIcon').classList.add('hidden');
+            $('#receiptText').textContent = file.name;
+        });
+
+        recalc();
+    </script>
+
+    <!-- الفوتر -->
+    <footer class="border-t-4 border-t-gold-400 bg-navy-950 py-8 text-center font-bold text-navy-100">
+        <p class="flex items-center justify-center gap-1.5">
+            <i data-lucide="copyright" class="size-4 text-gold-400"></i>
+            كل الحقوق محفوظة
+            <span class="text-gold-300">بن جمال</span>
+        </p>
+    </footer>
+</body>
+</html>
