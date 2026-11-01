@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بن جمال</title>
-  <script type="module" crossorigin src="/ben-jamal/assets/main-BkkaH4O3.js"></script>
-  <link rel="stylesheet" crossorigin href="/ben-jamal/assets/main-CvwOCTZw.css">
+  <script type="module" crossorigin src="/ben-jamal/assets/main-DRDMR5ub.js"></script>
+  <link rel="stylesheet" crossorigin href="/ben-jamal/assets/main-C32EppE5.css">
 </head>
 <body class="bg-slate-50 font-[Cairo,sans-serif] text-slate-800">
 
@@ -14,12 +14,13 @@
         <div class="flex items-center justify-between px-6 sm:px-10">
             <h1 class="flex items-center gap-2 text-2xl font-extrabold">
                 <i data-lucide="shirt" class="size-7 text-gold-400"></i>
+                 <!-- <img src="./src/images/logo.png" alt="" class="h-8"> -->
                 بن جمال
             </h1>
-            <button type="button" aria-label="السلة" class="relative rounded-full bg-white/10 p-2.5 transition hover:bg-white/20">
+            <a href="./pages/cart.html" aria-label="السلة" class="relative rounded-full bg-white/10 p-2.5 transition hover:bg-white/20">
                 <i data-lucide="shopping-cart" class="size-6"></i>
-                <span class="absolute -top-1 -end-1 grid size-5 place-items-center rounded-full bg-gold-400 text-xs font-extrabold text-navy-950">0</span>
-            </button>
+                <span class="absolute -top-1 -inset-e-1 grid size-5 place-items-center rounded-full bg-gold-400 text-xs font-extrabold text-navy-950">0</span>
+            </a>
         </div>
     </header>
 
@@ -35,8 +36,8 @@
     <main>
         <!-- البانر -->
         <section class="relative overflow-hidden bg-linear-to-bl from-navy-900 via-navy-800 to-navy-700 px-6 py-16 text-white sm:px-10 sm:py-24">
-            <div class="pointer-events-none absolute -start-20 -top-20 size-72 rounded-full bg-gold-400/20 blur-3xl"></div>
-            <div class="pointer-events-none absolute -bottom-24 end-10 size-80 rounded-full bg-navy-300/15 blur-3xl"></div>
+            <div class="pointer-events-none absolute -inset-s-20 -top-20 size-72 rounded-full bg-gold-400/20 blur-3xl"></div>
+            <div class="pointer-events-none absolute -bottom-24 inset-e-10 size-80 rounded-full bg-navy-300/15 blur-3xl"></div>
             <div class="relative mx-auto max-w-6xl">
                 <span class="rounded-full bg-gold-400 px-4 py-1 text-sm font-extrabold text-navy-950">وصل حديثاً</span>
                 <h2 class="mt-5 text-4xl font-extrabold leading-snug sm:text-5xl">أناقة تليق بك<br><span class="text-gold-300">في كل مناسبة</span></h2>
@@ -116,7 +117,7 @@
                                 <span class="text-xl font-extrabold text-navy-800">50.000 ج</span>
                                 <span class="text-sm font-bold text-slate-400 line-through">65.000 ج</span>
                             </div>
-                            <button type="button" class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
+                            <button type="button" data-add-to-cart class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
                                 <i data-lucide="shopping-cart" class="size-5"></i><span>أضف للسلة</span>
                             </button>
                         </div>
@@ -139,7 +140,7 @@
                                 <span class="text-xl font-extrabold text-navy-800">50.000 ج</span>
                                 <span class="text-sm font-bold text-slate-400 line-through">65.000 ج</span>
                             </div>
-                            <button type="button" class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
+                            <button type="button" data-add-to-cart class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
                                 <i data-lucide="shopping-cart" class="size-5"></i><span>أضف للسلة</span>
                             </button>
                         </div>
@@ -162,7 +163,7 @@
                                 <span class="text-xl font-extrabold text-navy-800">50.000 ج</span>
                                 <span class="text-sm font-bold text-slate-400 line-through">65.000 ج</span>
                             </div>
-                            <button type="button" class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
+                            <button type="button" data-add-to-cart class="mt-1 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
                                 <i data-lucide="shopping-cart" class="size-5"></i><span>أضف للسلة</span>
                             </button>
                         </div>
@@ -172,6 +173,82 @@
             </div>
         </section>
     </main>
+
+
+    <dialog id="cartModal" aria-labelledby="cartModalTitle"
+            class="m-auto w-[calc(100%-2rem)] max-w-md overflow-hidden rounded-2xl bg-white p-0 text-slate-800 shadow-2xl backdrop:bg-navy-950/60 backdrop:backdrop-blur-sm">
+        <form method="dialog" class="font-[Cairo,sans-serif]">
+
+            <!-- الرأس -->
+            <div class="flex items-center gap-4 border-b-4 border-b-gold-400 bg-linear-to-l from-navy-950 to-navy-800 p-5 text-white">
+                <img src="/ben-jamal/assets/sada-BSg7uDsx.jpeg" alt="قميص سادة" class="size-20 shrink-0 rounded-lg object-cover ring-2 ring-white/30">
+                <div class="min-w-0 flex-1">
+                    <h3 id="cartModalTitle" class="truncate text-lg font-extrabold">قميص سادة</h3>
+                    <p class="mt-1 font-extrabold text-gold-300">50.000 ج</p>
+                </div>
+                <!-- زر الإغلاق: بدون JS لأن الفورم method="dialog" -->
+                <button type="submit" formnovalidate aria-label="إغلاق"
+                        class="grid size-9 shrink-0 place-items-center self-start rounded-full bg-white/10 transition hover:bg-white/20">
+                    <i data-lucide="x" class="size-5"></i>
+                </button>
+            </div>
+
+            <div class="space-y-6 p-6">
+
+                <!-- اللون -->
+                <fieldset>
+                    <legend class="mb-3 text-sm font-bold text-navy-900">اللون</legend>
+                    <div class="flex flex-wrap gap-3">
+                        <label class="cursor-pointer" title="أبيض">
+                            <input type="radio" name="color" value="أبيض" required class="peer sr-only">
+                            <span class="block size-9 rounded-full border border-slate-300 bg-white ring-2 ring-transparent ring-offset-2 transition peer-checked:ring-navy-800 peer-focus-visible:ring-gold-500"></span>
+                        </label>
+                        <label class="cursor-pointer" title="كحلي">
+                            <input type="radio" name="color" value="كحلي" class="peer sr-only">
+                            <span class="block size-9 rounded-full border border-slate-300 bg-navy-800 ring-2 ring-transparent ring-offset-2 transition peer-checked:ring-navy-800 peer-focus-visible:ring-gold-500"></span>
+                        </label>
+                        <label class="cursor-pointer" title="رمادي">
+                            <input type="radio" name="color" value="رمادي" class="peer sr-only">
+                            <span class="block size-9 rounded-full border border-slate-300 bg-slate-400 ring-2 ring-transparent ring-offset-2 transition peer-checked:ring-navy-800 peer-focus-visible:ring-gold-500"></span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- المقاس -->
+                <fieldset>
+                    <legend class="mb-3 text-sm font-bold text-navy-900">المقاس</legend>
+                    <div class="flex flex-wrap gap-2">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="size" value="L" required class="peer sr-only">
+                            <span class="block min-w-12 rounded-lg border border-navy-200 px-4 py-2 text-center text-sm font-bold text-navy-700 transition hover:border-navy-400 peer-checked:border-navy-800 peer-checked:bg-navy-800 peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-500">L</span>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="size" value="XL" class="peer sr-only">
+                            <span class="block min-w-12 rounded-lg border border-navy-200 px-4 py-2 text-center text-sm font-bold text-navy-700 transition hover:border-navy-400 peer-checked:border-navy-800 peer-checked:bg-navy-800 peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-500">XL</span>
+                        </label>
+                        <label class="cursor-pointer">
+                            <input type="radio" name="size" value="2XL" class="peer sr-only">
+                            <span class="block min-w-12 rounded-lg border border-navy-200 px-4 py-2 text-center text-sm font-bold text-navy-700 transition hover:border-navy-400 peer-checked:border-navy-800 peer-checked:bg-navy-800 peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-gold-500">2XL</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- الكمية -->
+                <div>
+                    <label for="cartQty" class="mb-3 block text-sm font-bold text-navy-900">الكمية</label>
+                    <input id="cartQty" name="quantity" type="number" min="1" max="10" value="1" required
+                        class="h-11 w-24 rounded-lg border border-navy-200 text-center font-extrabold outline-none focus:border-navy-500 focus:ring-4 focus:ring-navy-100">
+                </div>
+
+                <!-- زر التأكيد -->
+                <button type="submit"
+                        class="flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-6 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
+                    <i data-lucide="shopping-cart" class="size-5"></i>
+                    <span>أضف للسلة</span>
+                </button>
+            </div>
+        </form>
+    </dialog>
 
 
     <!-- الفوتر -->
@@ -184,3 +261,5 @@
     </footer>
 </body>
 </html>
+<!-- 
+// name, phone number, pay way (show account number), notefication image -->
