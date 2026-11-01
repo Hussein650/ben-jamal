@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب | بن جمال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="flex min-h-screen flex-col bg-slate-50 font-[Cairo,sans-serif] text-slate-800">
+
+    <!-- الهيدر -->
+    <header class="sticky top-0 z-50 border-b-4 border-b-gold-400 bg-linear-to-l from-navy-950 to-navy-800 py-4 text-white shadow-md">
+        <div class="flex items-center justify-between px-6 sm:px-10">
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-extrabold">
+                <i data-lucide="shirt" class="size-7 text-gold-400"></i>
+                بن جمال
+            </a>
+            <button type="button" aria-label="السلة" class="relative rounded-full bg-white/10 p-2.5 transition hover:bg-white/20">
+                <i data-lucide="shopping-cart" class="size-6"></i>
+                <span class="absolute -top-1 -end-1 grid size-5 place-items-center rounded-full bg-gold-400 text-xs font-extrabold text-navy-950">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- القائمة -->
+    <nav class="bg-white py-4 shadow-sm">
+        <ul class="flex gap-6 px-6 font-bold text-slate-500 sm:px-10">
+            <li class="pb-1 transition hover:text-navy-800"><a href="index.html">الرئيسية</a></li>
+            <li class="pb-1 transition hover:text-navy-800"><a href="#">عن المتجر</a></li>
+            <li class="border-b-2 border-b-gold-500 pb-1 text-navy-800"><a href="login.html">تسجيل دخول</a></li>
+        </ul>
+    </nav>
+
+    <main class="relative flex flex-1 items-center justify-center overflow-hidden px-6 py-12 sm:px-10">
+        <div class="pointer-events-none absolute -start-24 top-10 size-80 rounded-full bg-gold-400/15 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-24 end-0 size-96 rounded-full bg-navy-300/20 blur-3xl"></div>
+
+        <div class="relative grid w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-navy-100 md:grid-cols-2">
+
+            <!-- اللوحة الجانبية -->
+            <div class="relative hidden flex-col justify-between overflow-hidden bg-linear-to-bl from-navy-900 via-navy-800 to-navy-700 p-10 text-white md:flex">
+                <div class="pointer-events-none absolute -bottom-16 -start-16 size-64 rounded-full bg-gold-400/20 blur-3xl"></div>
+                <div class="relative">
+                    <span class="rounded-full bg-gold-400 px-4 py-1 text-sm font-extrabold text-navy-950">انضم إلينا</span>
+                    <h2 class="mt-5 text-3xl font-extrabold leading-snug">حساب واحد<br><span class="text-gold-300">وتجربة أسهل</span></h2>
+                    <p class="mt-4 text-navy-100">أنشئ حسابك في دقيقة وابدأ التسوّق بكل راحة.</p>
+                </div>
+                <ul class="relative mt-10 space-y-3 text-sm font-bold text-navy-100">
+                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="size-5 text-gold-400"></i>تتبّع طلباتك بسهولة</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="size-5 text-gold-400"></i>حفظ عنوانك لتوصيل أسرع</li>
+                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="size-5 text-gold-400"></i>عروض خاصة للأعضاء</li>
+                </ul>
+            </div>
+
+            <!-- النموذج -->
+            <div class="p-8 sm:p-10">
+                <h3 class="text-2xl font-extrabold text-navy-900">إنشاء حساب جديد
+                    <span class="mt-2 block h-1 w-14 rounded-full bg-gold-400"></span>
+                </h3>
+                <p class="mt-4 text-sm text-slate-500">املأ البيانات التالية للبدء.</p>
+
+                <form id="registerForm" action="#" method="post" class="mt-6 space-y-4">
+
+                    <div>
+                        <label for="name" class="mb-1.5 block text-sm font-bold text-navy-900">الاسم الكامل</label>
+                        <div class="relative">
+                            <i data-lucide="user" class="pointer-events-none absolute inset-s-3 top-1/2 size-5 -translate-y-1/2 text-slate-400"></i>
+                            <input id="name" name="name" type="text" required autocomplete="name"
+                                   class="w-full rounded-lg border border-navy-200 bg-navy-50/50 py-3 ps-11 pe-4 text-sm outline-none transition placeholder:text-slate-400 focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100"
+                                   placeholder="محمد أحمد">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="phone" class="mb-1.5 block text-sm font-bold text-navy-900">رقم الهاتف</label>
+                        <div class="relative">
+                            <i data-lucide="phone" class="pointer-events-none absolute inset-s-3 top-1/2 size-5 -translate-y-1/2 text-slate-400"></i>
+                            <input id="phone" name="phone" type="tel" required autocomplete="tel" dir="ltr"
+                                   class="w-full rounded-lg border border-navy-200 bg-navy-50/50 py-3 ps-11 pe-4 text-start text-sm outline-none transition placeholder:text-slate-400 focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100"
+                                   placeholder="09XXXXXXXX">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="mb-1.5 block text-sm font-bold text-navy-900">البريد الإلكتروني <span class="font-medium text-slate-400">(اختياري)</span></label>
+                        <div class="relative">
+                            <i data-lucide="mail" class="pointer-events-none absolute inset-s-3 top-1/2 size-5 -translate-y-1/2 text-slate-400"></i>
+                            <input id="email" name="email" type="email" autocomplete="email" dir="ltr"
+                                   class="w-full rounded-lg border border-navy-200 bg-navy-50/50 py-3 ps-11 pe-4 text-start text-sm outline-none transition placeholder:text-slate-400 focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100"
+                                   placeholder="example@mail.com">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="password" class="mb-1.5 block text-sm font-bold text-navy-900">كلمة المرور</label>
+                        <div class="relative">
+                            <i data-lucide="lock" class="pointer-events-none absolute inset-s-3 top-1/2 size-5 -translate-y-1/2 text-slate-400"></i>
+                            <input name="password" type="password" required minlength="8"
+                                   class="w-full rounded-lg border border-navy-200 bg-navy-50/50 py-3 ps-11 pe-12 text-sm outline-none transition placeholder:text-slate-400 focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100"
+                                   placeholder="8 أحرف على الأقل">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="confirm" class="mb-1.5 block text-sm font-bold text-navy-900">تأكيد كلمة المرور</label>
+                        <div class="relative">
+                            <i data-lucide="shield-check" class="pointer-events-none absolute inset-s-3 top-1/2 size-5 -translate-y-1/2 text-slate-400"></i>
+                            <input name="confirm" type="password" required
+                                   class="w-full rounded-lg border border-navy-200 bg-navy-50/50 py-3 ps-11 pe-12 text-sm outline-none transition placeholder:text-slate-400 focus:border-navy-500 focus:bg-white focus:ring-4 focus:ring-navy-100"
+                                   placeholder="أعد كتابة كلمة المرور">
+                        </div>
+                    </div>
+
+                    <button type="submit"
+                            class="mt-8 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 font-bold text-white transition hover:bg-navy-900 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500">
+                        <i data-lucide="user-plus" class="size-5"></i>
+                        <span>إنشاء الحساب</span>
+                    </button>
+                </form>
+
+                <p class="mt-6 text-center text-sm text-slate-500">
+                    لديك حساب بالفعل؟
+                    <a href="./login.html" class="font-extrabold text-navy-800 underline decoration-gold-400 decoration-2 underline-offset-4 transition hover:text-navy-600">سجّل دخولك</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../src/main.js"></script>
+
+    <!-- الفوتر -->
+    <footer class="border-t-4 border-t-gold-400 bg-navy-950 py-8 text-center font-bold text-navy-100">
+        <p class="flex items-center justify-center gap-1.5">
+            <i data-lucide="copyright" class="size-4 text-gold-400"></i>
+            كل الحقوق محفوظة
+            <span class="text-gold-300">بن جمال</span>
+        </p>
+    </footer>
+</body>
+</html>
