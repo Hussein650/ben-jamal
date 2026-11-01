@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن المتجر | بن جمال</title>
+</head>
+<body class="bg-slate-50 font-[Cairo,sans-serif] text-slate-800">
+
+    <!-- الهيدر -->
+    <header class="sticky top-0 z-50 border-b-4 border-b-gold-400 bg-linear-to-l from-navy-950 to-navy-800 py-4 text-white shadow-md">
+        <div class="flex items-center justify-between px-6 sm:px-10">
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-extrabold">
+                <i data-lucide="shirt" class="size-7 text-gold-400"></i>
+                بن جمال
+            </a>
+            <button type="button" aria-label="السلة" class="relative rounded-full bg-white/10 p-2.5 transition hover:bg-white/20">
+                <i data-lucide="shopping-cart" class="size-6"></i>
+                <span class="absolute -top-1 -end-1 grid size-5 place-items-center rounded-full bg-gold-400 text-xs font-extrabold text-navy-950">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- القائمة -->
+    <nav class="bg-white py-4 shadow-sm">
+        <ul class="flex gap-6 px-6 font-bold text-slate-500 sm:px-10">
+            <li class="pb-1 transition hover:text-navy-800"><a href="../index.html">الرئيسية</a></li>
+            <li class="border-b-2 border-b-gold-500 pb-1 text-navy-800"><a href="./about.html">عن المتجر</a></li>
+            <li class="pb-1 transition hover:text-navy-800"><a href="../auth/login.html">تسجيل دخول</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- العنوان -->
+        <section class="relative overflow-hidden bg-linear-to-bl from-navy-900 via-navy-800 to-navy-700 px-6 py-14 text-white sm:px-10 sm:py-20">
+            <div class="pointer-events-none absolute -start-20 -top-20 size-72 rounded-full bg-gold-400/20 blur-3xl"></div>
+            <div class="pointer-events-none absolute -bottom-24 end-10 size-80 rounded-full bg-navy-300/15 blur-3xl"></div>
+            <div class="relative mx-auto max-w-6xl">
+                <span class="rounded-full bg-gold-400 px-4 py-1 text-sm font-extrabold text-navy-950">من نحن</span>
+                <h2 class="mt-5 text-4xl font-extrabold leading-snug sm:text-5xl">بن جمال<br><span class="text-gold-300">أناقة تبدأ من التفاصيل</span></h2>
+                <p class="mt-4 max-w-lg text-navy-100">متجر للملابس الرجالية نختار لك فيه أجود الخامات بأسعار مناسبة.</p>
+            </div>
+        </section>
+
+        <!-- القصة -->
+        <section class="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 sm:px-10 md:grid-cols-2">
+            <div>
+                <h3 class="text-2xl font-extrabold text-navy-900">قصتنا
+                    <span class="mt-2 block h-1 w-14 rounded-full bg-gold-400"></span>
+                </h3>
+                <!-- غيّر النص التالي بقصة متجرك الحقيقية -->
+                <p class="mt-5 leading-8 text-slate-600">بدأ "بن جمال" بفكرة بسيطة: أن يجد كل رجل قميصاً أنيقاً ومريحاً بسعر عادل. نحرص على اختيار الأقمشة بعناية، وعلى أن تناسب القطع مختلف الأذواق والمناسبات.</p>
+                <p class="mt-4 leading-8 text-slate-600">واليوم نقدّم مجموعات متنوعة من القمصان السادة والمقلّمة والكاروهات، ونعمل دائماً على تطوير خدمتنا لتصلك طلباتك بسهولة وسرعة.</p>
+                <a href="../index.html#products" class="mt-7 inline-flex items-center gap-2 rounded-full bg-navy-800 px-7 py-3 font-bold text-white shadow-md transition hover:bg-navy-900 hover:shadow-lg">
+                    تصفّح المنتجات
+                    <i data-lucide="arrow-left" class="size-5"></i>
+                </a>
+            </div>
+
+            <!-- صورة المتجر: ضع صورتك في src/images/store.jpeg -->
+            <div class="relative">
+                <div class="absolute -bottom-3 -end-3 size-full rounded-2xl bg-navy-400/40"></div>
+                <div class="relative aspect-4/3 overflow-hidden rounded-2xl bg-linear-to-br from-navy-700 to-navy-900 shadow-xl">
+                    <img src="../src/images/store.jpeg" alt="متجر بن جمال" loading="lazy" class="h-full w-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- قيمنا -->
+        <section class="border-y border-navy-100 bg-white px-6 py-14 sm:px-10">
+            <div class="mx-auto max-w-6xl">
+                <h3 class="mb-8 text-2xl font-extrabold text-navy-900">لماذا بن جمال؟
+                    <span class="mt-2 block h-1 w-14 rounded-full bg-gold-400"></span>
+                </h3>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="rounded-xl bg-slate-50 p-6 ring-1 ring-navy-100 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <span class="grid size-12 place-items-center rounded-full bg-navy-100 text-navy-700"><i data-lucide="shield-check" class="size-6"></i></span>
+                        <h4 class="mt-4 text-lg font-extrabold text-navy-950">جودة مضمونة</h4>
+                        <p class="mt-2 text-sm leading-7 text-slate-500">نختار الأقمشة والخياطة بعناية لتدوم معك طويلاً.</p>
+                    </div>
+                    <div class="rounded-xl bg-slate-50 p-6 ring-1 ring-navy-100 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <span class="grid size-12 place-items-center rounded-full bg-gold-100 text-gold-700"><i data-lucide="tag" class="size-6"></i></span>
+                        <h4 class="mt-4 text-lg font-extrabold text-navy-950">أسعار مناسبة</h4>
+                        <p class="mt-2 text-sm leading-7 text-slate-500">قيمة حقيقية مقابل ما تدفعه، مع عروض دائمة.</p>
+                    </div>
+                    <div class="rounded-xl bg-slate-50 p-6 ring-1 ring-navy-100 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <span class="grid size-12 place-items-center rounded-full bg-navy-100 text-navy-700"><i data-lucide="truck" class="size-6"></i></span>
+                        <h4 class="mt-4 text-lg font-extrabold text-navy-950">توصيل سريع</h4>
+                        <p class="mt-2 text-sm leading-7 text-slate-500">نوصّل طلبك إلى بابك مع إمكانية الدفع عند الاستلام.</p>
+                    </div>
+                    <div class="rounded-xl bg-slate-50 p-6 ring-1 ring-navy-100 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                        <span class="grid size-12 place-items-center rounded-full bg-gold-100 text-gold-700"><i data-lucide="refresh-ccw" class="size-6"></i></span>
+                        <h4 class="mt-4 text-lg font-extrabold text-navy-950">استبدال سهل</h4>
+                        <p class="mt-2 text-sm leading-7 text-slate-500">لم يناسبك المقاس؟ نستبدله لك بكل سهولة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- التواصل -->
+        <section class="mx-auto max-w-6xl px-6 py-14 sm:px-10">
+            <h3 class="mb-8 text-2xl font-extrabold text-navy-900">تواصل معنا
+                <span class="mt-2 block h-1 w-14 rounded-full bg-gold-400"></span>
+            </h3>
+            <!-- استبدل البيانات التالية ببيانات متجرك الحقيقية -->
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="flex items-center gap-4 rounded-xl bg-white p-5 shadow-sm ring-1 ring-navy-100">
+                    <span class="grid size-11 shrink-0 place-items-center rounded-full bg-navy-800 text-gold-400"><i data-lucide="map-pin" class="size-5"></i></span>
+                    <div><p class="text-xs font-bold text-slate-400">العنوان</p><p class="font-bold text-navy-950">المدينة، الحي، الشارع</p></div>
+                </div>
+                <div class="flex items-center gap-4 rounded-xl bg-white p-5 shadow-sm ring-1 ring-navy-100">
+                    <span class="grid size-11 shrink-0 place-items-center rounded-full bg-navy-800 text-gold-400"><i data-lucide="phone" class="size-5"></i></span>
+                    <div><p class="text-xs font-bold text-slate-400">الهاتف</p><p dir="ltr" class="text-end font-bold text-navy-950">09XXXXXXXX</p></div>
+                </div>
+                <div class="flex items-center gap-4 rounded-xl bg-white p-5 shadow-sm ring-1 ring-navy-100">
+                    <span class="grid size-11 shrink-0 place-items-center rounded-full bg-navy-800 text-gold-400"><i data-lucide="mail" class="size-5"></i></span>
+                    <div><p class="text-xs font-bold text-slate-400">البريد</p><p dir="ltr" class="text-end font-bold text-navy-950">info@example.com</p></div>
+                </div>
+                <div class="flex items-center gap-4 rounded-xl bg-white p-5 shadow-sm ring-1 ring-navy-100">
+                    <span class="grid size-11 shrink-0 place-items-center rounded-full bg-navy-800 text-gold-400"><i data-lucide="clock" class="size-5"></i></span>
+                    <div><p class="text-xs font-bold text-slate-400">ساعات العمل</p><p class="font-bold text-navy-950">يومياً 9 ص – 9 م</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../src/main.js"></script>
+
+    <!-- الفوتر -->
+    <footer class="border-t-4 border-t-gold-400 bg-navy-950 py-8 text-center font-bold text-navy-100">
+        <p class="flex items-center justify-center gap-1.5">
+            <i data-lucide="copyright" class="size-4 text-gold-400"></i>
+            كل الحقوق محفوظة
+            <span class="text-gold-300">بن جمال</span>
+        </p>
+    </footer>
+</body>
+</html>
